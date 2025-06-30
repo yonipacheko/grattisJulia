@@ -1,0 +1,462 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #2c3e50;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.9));
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin: 30px 0;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    color: #e74c3c;
+    margin-bottom: 15px;
+    font-weight: 300;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content h2 {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    color: #7f8c8d;
+    font-weight: 300;
+}
+
+.bike-hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.bike-hero-image:hover {
+    transform: scale(1.05);
+}
+
+/* Gift Message */
+.gift-message {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 50px;
+    border-radius: 20px;
+    margin: 40px 0;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.gift-message h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.gift-message p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.highlight-box {
+    background: linear-gradient(45deg, #74b9ff, #0984e3);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px 0;
+    box-shadow: 0 10px 25px rgba(116, 185, 255, 0.3);
+}
+
+.highlight-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.highlight-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.highlight-box li {
+    padding: 10px 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.highlight-box li:last-child {
+    border-bottom: none;
+}
+
+/* Bike Gallery */
+.bike-gallery {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 50px;
+    border-radius: 20px;
+    margin: 40px 0;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.bike-gallery h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+}
+
+.gallery-item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.1);
+}
+
+.gallery-caption {
+    padding: 25px;
+}
+
+.gallery-caption h3 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.gallery-caption p {
+    color: #7f8c8d;
+    font-size: 1rem;
+}
+
+/* Features Section */
+.features {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 50px;
+    border-radius: 20px;
+    margin: 40px 0;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Adventure Ideas */
+.adventure-ideas {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 50px;
+    border-radius: 20px;
+    margin: 40px 0;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.adventure-ideas h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ideas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.idea-card {
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.idea-card:hover {
+    transform: translateY(-5px);
+}
+
+.idea-card.morning {
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+}
+
+.idea-card.weekend {
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+}
+
+.idea-card.city {
+    background: linear-gradient(135deg, #d299c2, #fef9d7);
+}
+
+.idea-card.social {
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+}
+
+.idea-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.idea-card p {
+    font-size: 1rem;
+    color: #34495e;
+    text-align: justify;
+}
+
+/* Care Tips */
+.care-tips {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 50px;
+    border-radius: 20px;
+    margin: 40px 0;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.care-tips h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.tip-item {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 5px solid #27ae60;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.tip-item h4 {
+    color: #27ae60;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.tip-item p {
+    color: #5a6c7d;
+    font-size: 0.95rem;
+}
+
+/* Personal Message */
+.personal-message {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    color: white;
+    padding: 50px;
+    border-radius: 20px;
+    margin: 40px 0;
+    box-shadow: 0 20px 40px rgba(238, 90, 36, 0.3);
+    text-align: center;
+}
+
+.message-box h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.message-box p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    text-align: justify;
+    opacity: 0.95;
+}
+
+.signature {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.signature p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+    background: rgba(44, 62, 80, 0.9);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 40px 0 30px 0;
+    backdrop-filter: blur(10px);
+}
+
+.footer p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 40px 25px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.4rem;
+    }
+    
+    .gift-message,
+    .bike-gallery,
+    .features,
+    .adventure-ideas,
+    .care-tips,
+    .personal-message {
+        padding: 30px 25px;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .ideas-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .message-box p {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.2rem;
+    }
+    
+    .gift-message h2,
+    .bike-gallery h2,
+    .features h2,
+    .adventure-ideas h2,
+    .care-tips h2,
+    .personal-message h2 {
+        font-size: 2rem;
+    }
+}
