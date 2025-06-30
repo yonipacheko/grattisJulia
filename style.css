@@ -123,8 +123,8 @@ body {
     border-bottom: none;
 }
 
-/* Bike Gallery */
-.bike-gallery {
+/* Starter Kit Section */
+.starter-kit {
     background: rgba(255, 255, 255, 0.95);
     padding: 50px;
     border-radius: 20px;
@@ -133,20 +133,31 @@ body {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
-.bike-gallery h2 {
+.starter-kit h2 {
     font-size: 2.5rem;
     color: #2c3e50;
     text-align: center;
+    margin-bottom: 25px;
+}
+
+.kit-intro {
+    font-size: 1.2rem;
+    text-align: center;
     margin-bottom: 40px;
+    color: #34495e;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.gallery-grid {
+.kit-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
 }
 
-.gallery-item {
+.kit-item {
     background: white;
     border-radius: 15px;
     overflow: hidden;
@@ -154,87 +165,105 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.gallery-item:hover {
+.kit-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-.gallery-image {
+.kit-image {
     width: 100%;
-    height: 300px;
+    height: 200px;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.gallery-item:hover .gallery-image {
+.kit-item:hover .kit-image {
     transform: scale(1.1);
 }
 
-.gallery-caption {
+.kit-content {
     padding: 25px;
 }
 
-.gallery-caption h3 {
+.kit-content h3 {
     font-size: 1.4rem;
     color: #2c3e50;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.gallery-caption p {
+.kit-content p {
     color: #7f8c8d;
     font-size: 1rem;
+    margin-bottom: 8px;
 }
 
-/* Features Section */
-.features {
-    background: rgba(255, 255, 255, 0.95);
+.kit-content p strong {
+    color: #e74c3c;
+}
+
+/* Gift Cards Section */
+.gift-cards {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    color: white;
     padding: 50px;
     border-radius: 20px;
     margin: 40px 0;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px rgba(238, 90, 36, 0.3);
 }
 
-.features h2 {
+.gift-cards h2 {
     font-size: 2.5rem;
-    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.gift-cards > p {
+    font-size: 1.2rem;
     text-align: center;
     margin-bottom: 40px;
+    opacity: 0.95;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.features-grid {
+.cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
 
-.feature-card {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
+.gift-card-item {
+    background: rgba(255, 255, 255, 0.15);
     padding: 30px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease;
 }
 
-.feature-card:hover {
+.gift-card-item:hover {
     transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
 }
 
-.feature-icon {
-    font-size: 3rem;
+.gift-card-item h3 {
+    font-size: 1.5rem;
     margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.feature-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-}
-
-.feature-card p {
-    font-size: 1rem;
+.gift-card-item p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
     opacity: 0.9;
+}
+
+.gift-card-item em {
+    font-style: italic;
+    color: #fff3cd;
 }
 
 /* Adventure Ideas */
@@ -328,6 +357,11 @@ body {
     border-radius: 12px;
     border-left: 5px solid #27ae60;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.tip-item:hover {
+    transform: translateY(-3px);
 }
 
 .tip-item h4 {
@@ -343,12 +377,12 @@ body {
 
 /* Personal Message */
 .personal-message {
-    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    background: linear-gradient(45deg, #667eea, #764ba2);
     color: white;
     padding: 50px;
     border-radius: 20px;
     margin: 40px 0;
-    box-shadow: 0 20px 40px rgba(238, 90, 36, 0.3);
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
     text-align: center;
 }
 
@@ -413,19 +447,19 @@ body {
     }
     
     .gift-message,
-    .bike-gallery,
-    .features,
+    .starter-kit,
+    .gift-cards,
     .adventure-ideas,
     .care-tips,
     .personal-message {
         padding: 30px 25px;
     }
     
-    .gallery-grid {
+    .kit-grid {
         grid-template-columns: 1fr;
     }
     
-    .features-grid {
+    .cards-container {
         grid-template-columns: 1fr;
     }
     
@@ -452,11 +486,15 @@ body {
     }
     
     .gift-message h2,
-    .bike-gallery h2,
-    .features h2,
+    .starter-kit h2,
+    .gift-cards h2,
     .adventure-ideas h2,
     .care-tips h2,
     .personal-message h2 {
         font-size: 2rem;
+    }
+    
+    .kit-image {
+        height: 150px;
     }
 }
