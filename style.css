@@ -87,6 +87,27 @@ body {
     text-align: center;
 }
 
+.gift-from {
+    background: linear-gradient(45deg, #ff9a9e, #fecfef);
+    padding: 20px 30px;
+    border-radius: 15px;
+    margin: 25px 0;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(255, 154, 158, 0.3);
+}
+
+.from-families {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin: 0;
+    font-weight: 400;
+}
+
+.from-families strong {
+    color: #e74c3c;
+    font-weight: 600;
+}
+
 .gift-message p {
     font-size: 1.2rem;
     margin-bottom: 20px;
